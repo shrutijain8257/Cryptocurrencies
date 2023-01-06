@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
         child: Text(currency['name'][0]),
       ),
       title: Text(
-        currency['name'],
+        currency['symbol'],
         style: const TextStyle(fontWeight: FontWeight.bold),
       ),
       subtitle: _getSubtitle(currency['quotes']['USD']['price'],

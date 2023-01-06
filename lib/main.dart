@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
 }
 
 Future<List> getCurrencies() async {
-  String cryptourl = "https://api.coinpaprika.com/v1/tickers";
-  // String cryptourl = "https://api.wazirx.com/sapi/v1/tickers/24hr";
+  //String cryptourl = "https://api.coinpaprika.com/v1/tickers";
+   String cryptourl = "https://api.wazirx.com/sapi/v1/tickers/24hr";
 
   http.Response response = await http.get(Uri.parse(cryptourl));
   return jsonDecode(response.body);
